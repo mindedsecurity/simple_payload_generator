@@ -19,22 +19,7 @@ See the examples in the next paragraphs.
 
 Feel free to ask for new features! PRs are absoultely welcome :) 
 
-# As a Library
-
-Here's an example to use it as a python library:
-
-```
-from payload_generator import PayLoadGenerator
-
-template = '{[0,6]}0A{R[0,1,"B"]}FF{R[1,2,">H"]}0E{[0,4]}DD'
-payloads = Payload_Generator(template)
-
-for pl in payloads:
-    print(pl)
-
-```
-
-# Using From Bash
+# From Bash
 
 When directly called from command line, it will output each payload in \xHH hex format, with each payload separated by a newline.
 
@@ -81,6 +66,23 @@ will output:
 
 ```
 
+
+# As a Library
+
+Here's an example to use it as a python library:
+
+```
+from payload_generator import PayLoadGenerator
+
+template = '{[0,6]}0A{R[0,1,"B"]}FF{R[1,2,">H"]}0E{[0,4]}DD'
+payloads = Payload_Generator(template)
+
+for pl in payloads:
+    print(pl)
+
+```
+
+See the Examples folder.
 
 # Contribs
 
