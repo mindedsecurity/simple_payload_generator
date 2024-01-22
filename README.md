@@ -1,4 +1,4 @@
-# Simple Payload Generator (SPG)
+# Simple Payload Generator
 
 A "simple" tool/library that can be used to generate a set of binary payloads according to a template.
 The payload can be used for fuzzing or unit testing.
