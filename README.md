@@ -9,7 +9,7 @@ This library allows to create custom multiple payloads using a templating format
 
 In particular it's possible to use the following special sequences:
 
- * *{R[min,max,pack_format]}* : Creates a sequence of numbers from min to max and encodes it using the struct.pack format ('B','>H' etc). It will create (max-min) payloads. 
+ * *{R[min,max,pack_format]}* : Creates a sequence of numbers from min to max and encodes it using the struct.pack format ('B','>H' etc). It will create (max-min) payloads (for pack format see https://docs.python.org/3/library/struct.html). 
  * *{r{bytesequence_length, ar_len}}*: Creates an array of 'ar_len' length where each element is a randome sequence of bytes of 'bytesequence_length' length
  * *{[n1, n2, n3 ...]}*: Adds to the payload  the numbers and will create a set of payload according to the length of the array. 
  * *{@/path/to/file}*: using @ char the sequence will be taken from a file.
@@ -66,6 +66,27 @@ will output:
 
 ```
 
+Another example:
+
+```
+$ python3 payload_generator.py  '{[0,1]}0A{R[0,1,"B"]}FF{R[1,2,">H"]}0E{[0,4]}DD'
+\x00\x0a\x00\xff\x00\x01\x0e\x00\xdd
+\x01\x0a\x00\xff\x00\x01\x0e\x00\xdd
+\x00\x0a\x01\xff\x00\x01\x0e\x00\xdd
+\x01\x0a\x01\xff\x00\x01\x0e\x00\xdd
+\x00\x0a\x00\xff\x00\x02\x0e\x00\xdd
+\x01\x0a\x00\xff\x00\x02\x0e\x00\xdd
+\x00\x0a\x01\xff\x00\x02\x0e\x00\xdd
+\x01\x0a\x01\xff\x00\x02\x0e\x00\xdd
+\x00\x0a\x00\xff\x00\x01\x0e\x04\xdd
+\x01\x0a\x00\xff\x00\x01\x0e\x04\xdd
+\x00\x0a\x01\xff\x00\x01\x0e\x04\xdd
+\x01\x0a\x01\xff\x00\x01\x0e\x04\xdd
+\x00\x0a\x00\xff\x00\x02\x0e\x04\xdd
+\x01\x0a\x00\xff\x00\x02\x0e\x04\xdd
+\x00\x0a\x01\xff\x00\x02\x0e\x04\xdd
+\x01\x0a\x01\xff\x00\x02\x0e\x04\xdd
+```
 
 ## As a Library
 
