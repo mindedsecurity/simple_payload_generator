@@ -1,3 +1,14 @@
+#!/usr/bin/env python3
+# -*-coding:utf-8 -*-
+'''
+@File    :   payload_generator.py
+@Time    :   2024/01/16 18:38:01
+@Author  :   Stefano Di Paola/@WisecWisec
+@Version :   1.0
+@Contact :   stefano.dipaola@mindedsecurity.com
+@License :   (C)Copyright 2024, IMQ Nindedsecurity
+'''
+
 import itertools
 import struct
 import random
