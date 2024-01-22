@@ -3,7 +3,7 @@
 A "simple" tool/library that can be used to generate a set of binary payloads according to a template.
 The payload can be used for fuzzing or unit testing.
 
-# The Template Engine
+## The Template Engine
 
 This library allows to create custom multiple payloads using a templating format.
 
@@ -19,7 +19,7 @@ See the examples in the next paragraphs.
 
 Feel free to ask for new features! PRs are absoultely welcome :) 
 
-# From Bash
+## From Bash
 
 When directly called from command line, it will output each payload in \xHH hex format, with each payload separated by a newline.
 
@@ -67,7 +67,7 @@ will output:
 ```
 
 
-# As a Library
+## As a Library
 
 Here's an example to use it as a python library:
 
