@@ -87,3 +87,7 @@ See the Examples folder.
 # Contribs
 
 Feel free to ask for new features! PRs are absoultely welcome :) 
+
+# Social
+
+Do you want to tag the project? Use #SPG 
