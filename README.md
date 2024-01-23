@@ -106,6 +106,12 @@ for pl in payloads:
 
 See the Examples folder.
 
+# WARNING
+
+To make it more powerful, the library uses the eval python function. This means that the template it self should NOT be left in control by untrusted parties.
+You have been warned :D
+
+
 # Contribs
 
 Feel free to ask for new features! PRs are absoultely welcome :) 
