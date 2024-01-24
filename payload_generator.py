@@ -6,7 +6,7 @@
 @Author  :   Stefano Di Paola/@WisecWisec
 @Version :   1.0
 @Contact :   stefano.dipaola@mindedsecurity.com
-@License :   (C)Copyright 2024, IMQ Nindedsecurity
+@License :   (C)Copyright 2024, IMQ Mindedsecurity
 '''
 
 import itertools
