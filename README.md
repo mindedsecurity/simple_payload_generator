@@ -1,3 +1,5 @@
+![](https://visitor-badge.laobi.icu/badge?page_id=wisec.simple_fuzzer) 
+
 # Simple Payload Generator
 
 A "simple" tool/library that can be used to generate a set of binary payloads according to a template.
