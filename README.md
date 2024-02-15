@@ -113,12 +113,11 @@ You have been warned :D
 
 
 # Contribs
-
-
-![](https://visitor-badge.laobi.icu/badge?page_id=wisec.simple_fuzzer) 
-
 Feel free to ask for new features! PRs are absoultely welcome :) 
 
 # Social
 
 Do you want to tag the project? Use #SPG 
+
+
+![](https://visitor-badge.laobi.icu/badge?page_id=wisec.simple_fuzzer) 
